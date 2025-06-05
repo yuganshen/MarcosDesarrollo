@@ -1,0 +1,230 @@
+/*--------contactos---------*/
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FEA116;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-title::before {
+    left: -55px;
+}
+
+.section-title::after {
+    right: -55px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #0F172B;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0F172B;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+ 
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d98913;
+}
+
+.contact-info-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.contact-item h6 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+/* Modificar el tamaño de los campos de texto */
+.form-control {
+    width: 100%; /* Esto asegura que ocupe el 100% del contenedor */
+    padding: 15px; /* Incrementar el padding para un campo más grande */
+    margin-bottom: 15px; /* Ajustar el espaciado inferior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Aumentar el tamaño del texto dentro de los campos */
+    height: 50px; /* Aumentar la altura de los campos de entrada */
+}
+/* Para el textarea (campo de mensaje) puedes definir una altura específica */
+.form-control#message {
+    height: 200px; /* Ajustar el tamaño del área de texto */
+}
+
+/* Opcional: si quieres hacer más grandes las etiquetas también */
+.form-floating label {
+    font-size: 14px; /* Cambiar el tamaño de las etiquetas flotantes */
+}
+
+/* Cambiar la altura del botón de enviar */
+.btn {
+    padding: 15px 20px; /* Hacer más alto el botón */
+}
+
+/* Para el contenedor de contacto */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form {
+    order: 1;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    min-height: 350px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+/* Estilos para el iframe del mapa */
+.col-md-6 iframe {
+    width: 105%; /* Asegura que el iframe use todo el ancho disponible */
+    height: 400px; /* Ajusta la altura del mapa según sea necesario */
+    border: 0; /* Elimina el borde del iframe */
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.g-3 {
+    gap: 20px;
+}
+
+.contact-title {
+    margin-bottom: 50px;
+}
+
+/* Centrando el título "Contáctenos" y asegurando que todo esté en una línea */
+.contact-title h6,
+.contact-title h1 {
+    display: inline-block; /* Cambia esto a inline-block para que estén en una misma línea */
+    text-align: center;
+    margin: 0 10px; /* Añade margen entre los dos textos para darles espacio */
+}
+
+/* Ajustar la apariencia */
+.contact-title h1 {
+    font-size: 40px;
+	display: block; /* Mantener esto en su propia línea */
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px; /* Añadir espacio entre los dos textos */
+}
+
+.contact-title h6 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.contact-item h6 {
+    position: relative; /* Posiciona el elemento de manera que los pseudo-elementos se alineen correctamente */
+    display: inline-block; /* Hace que el título ocupe solo el espacio necesario */
+    margin-right: 20px; /* Espacio entre el título y el guion */
+}
+
+.contact-item h6::after {
+    content: ""; /* Crea un pseudo-elemento vacío */
+    display: inline-block; /* Permite que se muestre en línea con el texto */
+    width: 3cm; /* Establece el ancho del guion */
+	
+    height: 3px; /* Altura del guion */
+    background-color: currentColor; /* Hace que el color del guion herede del texto */
+    margin-left: 10px; /* Espacio entre el texto y el guion */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+.contact-item p {
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente del párrafo */
+    display: inline-flex; /* Utiliza flexbox para alinear el ícono y el texto */
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    margin: 0; /* Elimina el margen por defecto */
+	margin-bottom: 20px; /* Ajusta este valor para agregar espacio debajo del correo electrónico */
+}
+.contact-item p i {
+    font-size: 1.5rem; /* Aumenta el tamaño del ícono */
+    margin-right: 5px; /* Asegúrate de que haya un poco de espacio entre el ícono y el texto */
+	
+
+} 
+  
+/* formulario */

@@ -1,0 +1,183 @@
+/*--------habitaciones---------*/
+.rooms {
+    position: relative;
+}
+.rooms .heading h1 {
+    font-size: 100px;
+	font-weight: 500;
+	opacity: 0.1;
+    position: absolute;
+}
+.top {
+	margin-top: 30px;
+  }
+  
+  .mtop {
+	margin-top: 20px;
+  }
+
+  .rooms .heading h2 {
+    font-size: 32px; /* Ajusta el tamaño de la letra según sea necesario */
+    color: #741111; /* Opcional: Cambia el color si lo deseas */
+    font-weight: bold; /* Opcional: Haz el texto más grueso si lo deseas */
+}
+
+  .rooms .text {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    padding: 30px;
+
+  }
+  .text h2 {
+    margin-bottom: 0px; /* Ajusta este valor según sea necesario */
+    color:#00acee;
+    margin-top: -20px; /* Ajusta este valor según sea necesario */
+}
+.rate {
+    margin-top: -20px; /* Ajusta este valor según sea necesario */
+    position: relative; /* Esto permite que los ajustes de posición tengan efecto */
+    top: -5px; /* Desplaza el contenedor hacia arriba */
+}
+
+
+ 
+  
+  .rooms i {
+    font-size: 12px;
+    color: #fbb234;
+    margin: 15px 0;
+    margin-right: 5px;
+  }
+  
+  .rooms p {
+    margin: 20px 0;
+    opacity: 0.7;
+  }
+  
+  .rooms h3 {
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #7fc142;
+  }
+  .rooms h3 span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+  }
+  .owl-carousel1 .owl-nav .owl-prev,
+  .owl-carousel1 .owl-nav .owl-next {
+    position: absolute;
+    top: -10%;
+    height: 50px;
+    width: 50px;
+    background: #afb8a5 !important;
+  }
+  
+  .owl-carousel1 .owl-nav .owl-prev i,
+  .owl-carousel1 .owl-nav .owl-next i {
+    color: #fff;
+  }
+  
+  .owl-carousel1 .owl-nav .owl-prev {
+    left: 88%;
+  }
+  
+  .owl-carousel1 .owl-nav .owl-next {
+    right: 0;
+  }
+  
+
+.text p {
+    color: rgb(32, 43, 3); /* Cambia el color de la letra a negro */
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+    font-size: 16px; /* Ajusta el tamaño de la letra según sea necesario */
+    line-height: 2.0; /* Ajusta este valor según sea necesario */
+    
+}
+.button.flex {
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Alinea verticalmente en el centro */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.primary-btn {
+    margin-right: 10px; /* Espacio entre el botón y el precio */
+}
+
+  /*--------habitaciones---------*/
+  /*--------gallery---------*/
+.gallery {
+    position: relative;
+  }
+  
+
+  
+  .gallery .img {
+    position: relative;
+  }
+
+  .gallery .heading h1 {
+    color: #634108; /* Cambia este valor al color que desees (foto)*/
+    font-size: 100px;
+	font-weight: 500;
+	opacity: 0.1;
+    position: absolute;
+} 
+.gallery .heading h2 {
+    color: #a51616; /* Cambia este valor al color que desees */
+    font-size: 32px; /* Ajusta el tamaño de la letra según sea necesario */
+    font-weight: bold; /* Opcional: Haz el texto más grueso si lo deseas */
+}
+
+
+
+  
+  .gallery .img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(107, 129, 92, 0.86);
+    width: 255px;
+    height: 251px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  
+  .gallery span {  /*se cambia de fb.yt*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid white;
+  }
+  .overlay h3 {
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  .gallery .items:hover .overlay,
+.gallery .items:hover .img::after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.gallery .owl-nav .owl-prev {
+  left: 85%;
+}
+
+.gallery .owl-nav .owl-next {
+  right: 5%;
+}
+
+.gallery .owl-nav .owl-next,
+.gallery .owl-nav .owl-prev {
+  top: -30%;
+}
+/*--------gallery---------*/
+
+/*////////////////////////////// HASTA AQUI VA LAS HABITACIONES CREO /////////////////////////*/

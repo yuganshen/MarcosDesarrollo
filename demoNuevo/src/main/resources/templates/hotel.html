@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descripcion" content="Bienvenido a mi hotel">
+  <meta name="clave" content="hotel en peru">
+  
+  <!--Este link de abajo es para el carrousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+  
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> 
+ 
+
+    <!--Este link de abajo es para los íconos-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+crossorigin="anonymous"
+/>
+  <link rel="stylesheet" href="hotel.css">
+  <link rel="stylesheet" href="reserv.css">
+
+  <title>Hotel & Bienvenido</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" id="nave"> <!--BARRA DE NAVEGACION BOOSTRAP, etiquetas boostrap-->
+      <div class ="container">
+      <h1 class="logo">
+      <a href="index.html"><img src="image/logo.png" alt="Prisma Logo" style="height: 40px;"></a>
+      </h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <!--etiqueta boostrap nav item-->
+              <a class="nav-link" href="hotel.html">Inicio <span class="sr-only"></span></a>		
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="habitaciones.html">Habitaciones</a> <!--etiqueta boostrap nav link-->
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="About.html">Acerca de Nosotros</a>
+            </li>
+             <li class="nav-item">
+             <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+            </li> <!--boton success etiqueta boostrap-->
+            <li class="nav-item"><a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"  role="button">Reservar Ahora</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+    
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="image/home1.jpg" alt="">
+          <div class="text">
+          <h1><span class="text-primary">Disfruta</span>
+             Tu Estancia</h1>
+          <p class="lead"> Disfruten de nuestras exclusivas instalaciones, la hospitalidad
+             cálida de nuestro personal y la belleza de nuestro entorno. 
+             Permítanos ser parte de sus momentos más especiales y hacer 
+             de su visita una experiencia única.</p>
+             <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/banner-1.png" alt="">
+          <div class="text">
+            <h1><span class="text-primary">Disfruta</span>
+              Tu Estancia</h1>
+           <p class="lead"> Disfruten de nuestras exclusivas instalaciones, la hospitalidad
+              cálida de nuestro personal y la belleza de nuestro entorno. 
+              Permítanos ser parte de sus momentos más especiales y hacer 
+              de su visita una experiencia única.</p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/banner-2.png" alt="">
+          <div class="text">
+            <h1><span class="text-primary">Disfruta</span>
+              Tu Estancia</h1>
+           <p class="lead"> Disfruten de nuestras exclusivas instalaciones, la hospitalidad
+              cálida de nuestro personal y la belleza de nuestro entorno. 
+              Permítanos ser parte de sus momentos más especiales y hacer 
+              de su visita una experiencia única.</p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+ <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+ </script>
+
+
+
+
+
+    
+</header>
+ <!-- Modal -->
+ <div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <!-- Modal de bosstrap, etiqueta boostrap>(modal fade)-->
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <!-- Se agregó 'modal-sm' para hacer el modal más pequeño y 'modal-dialog-centered' para centrarlo -->
+    <div class="modal-content">
+      <div class="modal-header" id="head-modal">
+        <h5 class="modal-title" id="exampleModalLabel">Reservacion</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Se agregó 'text-center' para centrar el contenido horizontalmente -->
+        <div class="col-12">
+          <!--col md 4 etiqueta boostrap-->
+          <label class="form-label">Adultos</label>
+          <div class="counter-wrapper d-flex justify-content-center align-items-center gap-2">
+            <!-- Se agregó d-flex y centrado con justify-content-center y align-items-center -->
+            <button class="circle-btn" onclick="changeCount('adult', -1)">
+              –</button
+            ><!--BOTON CIRCULAR BOOSTRAP-->
+            <span id="adult" class="value-display">3</span>
+            <button class="circle-btn" onclick="changeCount('adult', 1)">
+              +
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 mt-3">
+          <label class="form-label">Niños</label>
+          <!--etiqueta form label boostrap-->
+          <div class="counter-wrapper d-flex justify-content-center align-items-center gap-2">
+            <button class="circle-btn" onclick="changeCount('child', -1)">
+              –
+            </button>
+            <span id="child" class="value-display">1</span>
+            <button class="circle-btn" onclick="changeCount('child', 1)">
+              +
+            </button>
+          </div>
+        </div>
+        <br />
+
+        <!--SWICH BOOSTRAP / CONTROL-->
+        <div class="form-check form-switch d-flex justify-content-center mt-3">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            >Mascotas permitidas</label
+          >
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-outline-success"
+          id="btnIngresar"
+        >
+          Ingresar
+        </button>
+      </div>
+      <!--bOTON BOOSTRAP-->
+    </div>
+  </div>
+</div>
+
+<!-- cierre modal -->
+<!-- script para el contador -->
+<script>
+ function changeCount(id, delta) {
+   const element = document.getElementById(id);
+   let value = parseInt(element.innerText);
+   value += delta;
+   if (value < 0) value = 0; // evitar negativos
+   element.innerText = value;
+ }
+</script>
+
+
+<section id="Home-info" class="bg-dark">  
+  <div class="info-img"></div>
+  <div class="info-content">
+    <h2><span class="text-primary">La Historia
+    </span> De Nuestro Hotel</h2>
+    <p>
+      Ubicado en el corazón de un paisaje tranquilo y majestuoso, Hotel Aria
+      fue concebido con la visión de ofrecer un refugio donde el lujo y la
+      serenidad se fusionan en perfecta armonía. Fundado por una familia apasionada
+      por la hospitalidad, Aria se inspiró en la idea de que cada estancia debe sentirse
+      como una melodía suave, donde los detalles marcan la diferencia.
+    </p>
+    <a href="About.html" class="btn btm-ligth">Leer
+      Mas</a>
+    </h2>
+  </div>
+
+</section>
+
+<section id="feactures">
+  <div class="box bg-light">
+    <i class="fa-solid fa-hotel fa-3x"></i>
+    <h3>Excelente Ubicacion</h3>
+    <p>El Hotel Aria se encuentra estratégicamente ubicado en el corazón de Cusco, ofreciendo
+       a sus huéspedes un acceso inigualable a los principales puntos de interés. A pocos minutos
+       de Machu Picchu y centros culturales, nuestro hotel permite disfrutar tanto de la tranquilidad
+       del entorno como de la vibrante vida local.</p>
+  </div>
+  <div class="box bg-primary">
+    <i class="fas fa-utensils fa-3x"></i>
+  <h3>Comida Gratis</h3>
+  <p>En el Hotel Aria, creemos que una experiencia de lujo incluye no solo un descanso perfecto, sino 
+    también una oferta culinaria de primera clase. Es por eso que ofrecemos a nuestros huéspedes comida
+    gratuita como parte de su estadía, para que disfruten de un desayuno delicioso.</p>
+  </div> 
+  <div class="box bg-light">
+    <i class="fas fa-dumbbell fa-3x"></i>
+  <h3>Sala de Fitness</h3>
+  <p>En el Hotel Aria, entendemos la importancia de mantener un estilo de vida saludable, incluso mientras 
+    viajas. Nuestra sala de fitness de última generación está completamente equipada para que puedas continuar 
+    con tu rutina de ejercicios sin interrupciones, puedes disfrutar de la sala de fitness a tu propio ritmo. </p>
+  </div>
+  
+</section>
+
+<div class="clr"></div>
+
+
+<footer class="footer">
+  <div class="container container-footer">
+    <div class="menu-footer">
+      <div class="contact-info">
+        <p class="title-footer">Información de Contacto </p>
+        <ul>
+          <li>Dirección: Av.  Matara N° 394 Cusco, Peru, CT 06066</li>
+          <li>Teléfono: 123-456-7890</li>
+          <li>Fax: 55555300</li>
+          <li>EmaiL: reservas@hotepri.com</li>   
+        </ul>
+        <div class="social-icons">  
+          <span class="facebook">               
+            <a href="https://web.facebook.com/hotelprismacusco/">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </span>
+          <span class="twitter">               
+            <a href="https://x.com/Sonesta_Cusco/status/1420035043473465349?mx=2">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </span>
+          <span class="youtube">               
+            <a href="https://www.youtube.com/watch?v=YqVKv2W1wk8">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </span>
+          <span class="pinterest">               
+            <a href="https://mx.pinterest.com/cobmoller/prisma-hotel/">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </span>
+          <span class="instagram">               
+            <a href="https://www.instagram.com/prismacusco/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <div class="information">
+        <p class="title-footer">Información</p>
+        <ul>
+          <li><a href="#">Acerca de Nosotros</a></li>
+          <li><a href="#">Información De Hotel</a></li>
+          <li><a href="#">Politicas de Privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Contactános</a></li>
+        </ul>
+      </div>
+
+      <div class="my-account">
+        <p class="title-footer">Mi cuenta</p>
+
+        <ul>
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Historial de Reservas</a></li>
+          <li><a href="#">Lista de Reservas</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a href="#">Reembolsos</a></li>
+        </ul>
+      </div>
+
+      <div class="newsletter">
+        <p class="title-footer">Suscripcion de promociones</p>
+
+        <div class="content">
+          <p>
+            Suscríbete a nuestras promociones ahora y mantente al día con
+            ofertas exclusivas.
+          </p>
+          <input type="email" placeholder="Ingresa el correo aquí..." />
+          <button>Suscríbete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Desarrollado por ALOJ &copy; 2025</p>
+
+      <img src="image/payment.png" alt="Pagos" />
+    </div>
+  </div>
+</footer>
+
+<script                       
+  src="https://kit.fontawesome.com/81581fb069.js"
+  crossorigin="anonymous"
+></script>
+
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("btnIngresar").addEventListener("click", function () {
+        // Muestra mensaje de éxito
+        alert("¡Fue un éxito! Ahora se va a registrar...");
+    
+        // Redirige después del mensaje
+        window.location.href = "reserv.html"; // Cambia esto por la página real de registro
+      });
+    </script>
+    
+    
+
+</body>
+  
+</body>
+</html>

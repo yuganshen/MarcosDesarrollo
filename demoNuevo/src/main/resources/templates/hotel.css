@@ -1,0 +1,564 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------home---------*/
+/*Letras de la pantalla de hotel*/
+.home {
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .home img {
+    width: 100%;
+    height: 100vh;
+  }
+ 
+  .home .text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+  }
+
+  
+  .home .text h1 {
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
+  }
+  .home .text p {
+    font-size: 20px;
+    
+  }
+  
+  
+  .home p {
+    margin: 20px 0;
+  }
+  
+  .home button {
+    margin-right: 20px;
+    
+  }
+  /*botones de hotel*/
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background: rgba(197, 199, 177, 0.5)!important;
+    color: #fff;
+  }
+  
+  .owl-nav .owl-prev {
+    left: 0;
+  }
+  
+  .owl-nav .owl-next {
+    right: 0;
+  }
+  
+  /*--------home---------*/
+
+@media (max-width: 768px) {
+    /* Ajustar el contenedor */
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Cambiar el diseño del showcase */
+    #showcase {
+        height: 400px; /* Reduce la altura para pantallas pequeñas */
+    }
+
+    #showcase .showcase-content h1 {
+        font-size: 40px;
+    }
+
+    #showcase .showcase-content p {
+        font-size: 16px;
+    }
+
+    /* Ajustar la disposición de las características (boxes) */
+    .box {
+        width: 100%; /* Hacer que las cajas ocupen todo el ancho en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    /* Ajustar las imágenes de info para que no floten */
+    #Home-info .info-img,
+    #Home-info .info-content {
+        float: none;
+        width: 100%;
+        height: auto;
+    }  
+
+    /* Ajustar la barra de navegación */
+    #nave ul {
+        display: block;
+        text-align: center;
+    }
+
+    #nave ul li {
+        float: none;
+    }
+
+    /* Ajustar el formulario de contacto */
+    #contact-form input, 
+    #contact-form textarea {
+        width: 100%;
+    }
+}
+
+
+
+/*estilo principal*/
+html,body {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.1cm;
+}
+
+a {
+    color: #ad602c;
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+     padding-bottom: 20px;
+
+}
+
+p { margin: 10px 0;
+
+}
+/* utilidad clase     */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary {
+    color: #f7c08a;
+}
+
+.lead {
+    font-size: 20px ;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color:#fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary {
+    background: #f7c08a;
+    color: #333;
+}
+ 
+.clr{
+    clear:both;
+}
+.l-heading {
+    font-size: 40px;
+}
+
+/*relleno*/
+.py-1 { padding: 10px 0;}
+.py-2 { padding: 20px 0;}
+.py-3 { padding: 30px 0;}
+
+/*/////////////////////// barra de navegacion //////////////////////////////////////////////*/
+/* Barra de navegación */
+.nav-item{
+    padding-top: 25px;
+
+}
+#nave {
+    background: rgba(51, 51, 51, 0.8); /* Fondo gris oscuro con transparencia */
+    color: #fff;
+    overflow: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    padding: 0px ; /* Ajuste de padding para mejor presentación */
+}
+
+#nave a {
+    color: #fff; /* Mantiene el texto de los enlaces en blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+#nave h1 {
+    float: left;
+    padding-top: 10px;
+}
+
+#nave ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#nave ul li {
+    float: left;
+}
+
+#nave ul li a {
+    display: block;
+    padding: 15px 20px; /* Espaciado más uniforme */
+    text-align: center;
+    font-size: 16px;
+    transition: background 0.3s ease, color 0.3s ease; /* Transiciones suaves en el hover */
+}
+
+#nave ul li a:hover,
+#nave ul li a.current {
+    background: rgba(138, 247, 214, 0.3); /* Fondo ligeramente anaranjado en hover con transparencia */
+    color: #f7c08a; /* Color del texto más claro en hover */
+    border-radius: 4px; /* Bordes redondeados para un efecto moderno */
+}
+
+/* Añadir un efecto de cambio de color en el logo al pasar por encima */
+#nave h1 a:hover {
+    color: #f7c08a; /* Cambia el color del logo en hover */
+}
+
+/* Estilo del icono de búsqueda */
+#nave ul li a i.fa-search {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+/* Botón "BOOK NOW" */
+.primary-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #348016; /* Color del botón */
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #96938f;
+}
+/*//////////////HASTA AQUI ES LA BARRA DE NAVEGACION CREO///////////////////////////*/
+
+/*fondo principal*/
+#showcase {
+    background: url('image/home1.jpg') no-repeat
+    center center/cover;
+    height: 600px;
+
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/*inicio info*/
+#Home-info {
+    height: 400px;
+}
+
+#Home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('image/Abou.jpg') no-repeat;
+    min-height: 100%;
+}
+
+#Home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#Home.info .infO-content p {
+    padding-bottom: 30px;
+}
+
+/* caracteristicas*/
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+
+}
+
+ 
+
+
+/*/////////////////////////////BOTONES DE INICIO Y HABITACIONES (Algunos)////////////////////*/  
+.content p {
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: var(--dark-color);
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eee;
+}
+
+.content button {
+	border: none;
+	background-color: #5c6d77;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.content button:hover {
+	background-color: var(--background-color);
+	color: #c4302b;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+
+	border-top: 1px solid #d2b495;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+
+
+
+:root {
+	--primary-color: #c7a17a;
+	--background-color: #f9f5f0;
+	--dark-color: #151515;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente del cuerpo a 16px */
+}
+
+h1, h2, h3 {
+    font-size: 2.4rem; /* Ajusta el tamaño de los encabezados según sea necesario */
+}
+
+.footer p {
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente en el pie de página */
+}
+
+
+
+/*/////////////// pie de pagina ////////////////////////////////*/
+.footer {
+	background-color: #1c1f1fe3;
+   
+}
+.footer img {
+    width: 300px;  /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+ 
+    margin: 0 10px; /* Espaciado horizontal entre las imágenes */
+}
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+    max-width: 90%; /* Ocupar todo el ancho de la pantalla */
+    margin: 0 auto; /* Asegura que esté centrado */
+    padding-left: 2rem; /* Ajusta según lo que necesites */
+    padding-right: 2rem; /* Ajusta según lo que necesites */
+}
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajusta a 4 columnas iguales */
+    gap: 3rem;
+    justify-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+    line-height: 1.2; /* Añadir esta línea para reducir el interlineado del título */
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 300;
+    line-height: 1.4; /* Ajusta el interlineado aquí */
+}
+.footer p {
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente en el pie de página */
+    line-height: 1.4; /* Ajusta el interlineado para el texto en el pie de página */
+}
+
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: var(--dark-color);
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.youtube {
+	background-color: #c4302b;
+}
+
+.pinterest {
+	background-color: #c8232c;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
